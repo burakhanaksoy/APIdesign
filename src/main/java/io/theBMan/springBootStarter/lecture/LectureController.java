@@ -1,5 +1,6 @@
 package io.theBMan.springBootStarter.lecture;
 
+import io.theBMan.springBootStarter.student.Student;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

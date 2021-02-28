@@ -1,5 +1,7 @@
 package io.theBMan.springBootStarter.lecture;
 
+import io.theBMan.springBootStarter.student.Student;
+import io.theBMan.springBootStarter.student.StudentRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

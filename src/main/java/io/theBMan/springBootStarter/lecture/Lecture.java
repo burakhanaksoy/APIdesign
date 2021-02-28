@@ -1,9 +1,9 @@
 package io.theBMan.springBootStarter.lecture;
 
-import io.theBMan.springBootStarter.student.Student;
-
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.ManyToMany;
+import javax.persistence.ManyToOne;
 
 @Entity
 public class Lecture {
@@ -11,16 +11,14 @@ public class Lecture {
     private String name;
     private String description;
     private String teacher;
-//    private Student student;
 
     public Lecture() {
     }
 
-    public Lecture(String name, String description, String teacher, Student student) {
+    public Lecture(String name, String description, String teacher) {
         this.name = name;
         this.description = description;
         this.teacher = teacher;
-//        this.student = student;
     }
 
     public String getName() {
@@ -46,12 +44,4 @@ public class Lecture {
     public void setTeacher(String teacher) {
         this.teacher = teacher;
     }
-
-//    public Student getStudent() {
-//        return student;
-//    }
-//
-//    public void setStudent(Student student) {
-//        this.student = student;
-//    }
 }
